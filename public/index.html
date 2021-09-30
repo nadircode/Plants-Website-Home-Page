@@ -1,0 +1,475 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants Website E-commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/filter.css">
+    <link rel="stylesheet" href="CSS/content.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            
+            <div class="logo">
+                <span class="img-span"><img id="logo-img" src="/Images/Logo.jpg" alt="logo"></span>
+                <span><h2>Plants</h2></span>
+            </div>
+            <div class="nav-item">
+                <ul>
+                    <a href="#" class="active-btn-nav"><li>Shop</li></a>
+                    <a href="#"><li>WorkShops</li></a>
+                    <a href="#"><li>Blogs</li></a>
+                </ul>
+            </div>
+            <div class="profile">
+                <ul>
+                   <a href="#"><li><img src="/Images/shopping-bag.png" alt="shopping-bag"></li></a>
+                   <a href="#"> <li><img src="/Images/heart-shape-outline-with-lining-at-right-edge.png" alt="heart"></li></a>
+                   <a href="#"> <li><img src="/Images/user.png" alt="user"></li></a>
+                </ul>
+            </div>
+            <a class="btn-menu"><i class="fas fa-bars"></i></a>
+        </nav>
+    </header>
+    
+    <!--    Main    -->
+    <div class="main">
+        <!--    Filter    -->
+    <div class="filter">
+        <div class="categories">
+            <h3>Categories</h3>
+            <input type="checkbox" id="gardening" name="categ1" value="Garedening">
+            <label for="categ1">Garedening</label><br>
+            <input type="checkbox" id="plants" name="categ2" value="Plants">
+            <label for="categ2">Plants</label><br>
+            <input type="checkbox" id="seeds" name="categ3" value="Seeds">
+            <label for="categ3">Seeds</label><br>
+            <input type="checkbox" id="bulbs" name="categ4" value="Bulbs">
+            <label for="categ4">Bulbs</label><br>
+            <input type="checkbox" id="planters" name="categ5" value="Planters">
+            <label for="categ5" id="categ5">Planters</label><br>
+            <button class="view-more" onclick="viewmore()">View more <i class="fas fa-chevron-down"></i></button>
+        </div>
+        <div class="price-range">
+            <h3>Price Range</h3>
+            <div><input type="text" placeholder="Min" class="min"><input type="text" placeholder="Max" class="max" ></div>
+        </div>
+        <div class="rating">
+            <h3>Ratings</h3>
+            <div class="stars">
+                <a><i class="fas fa-star"></i></a>
+                <a><i class="fas fa-star"></i></a>
+                <a><i class="fas fa-star"></i></a>
+                <a><i class="fas fa-star"></i></a>
+                <a><i class="fas fa-star"></i></a>
+            </div>
+        </div>
+        <div class="filter-button">
+            <button >Filter <i class="fas fa-filter"></i></button>
+        </div>
+        
+        
+    </div>
+    <!--    Content    -->
+    <div class="content">
+        <div class="nav-menu">
+            <ul>
+                   <a href="#"> <li><i class="far fa-user-circle"></i> <span>Profile</span>  </li></a>
+                   <hr>
+                   <a href="#"><li><i class="fas fa-shopping-cart"></i> <span>Shopping</span> </li></a>
+                   <hr>
+                   <a href="#"> <li><i class="far fa-heart"></i> <span>Favorites</span></li></a>
+                    <hr>
+                    <a href="#"> <li> <span>Shop</span></li></a>
+                    <hr>
+                    <a href="#"> <li> <span>WorkShops</span></li></a>
+                    <hr>
+                    <a href="#"> <li> <span>Blogs</span></li></a>
+                </ul>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Try it"><a class="icon"><i class="fas fa-times"></i></a>
+            <a class="search-btn"><i class="fas fa-search"></i> <span>Search</span></a>
+            <label></label>
+        </div>
+        <div  class="search-results"><label></label></div>
+        <div class="btn-browsing">
+            <a class="relevance-btn">Relevance</a>
+            <a class="popular-btn">Popular</a>
+            <a class="mostnew-btn">Most New</a>
+        </div>
+        <!-- Cards -->
+        <div class="cards-plants">
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants1.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Philodendron Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$325</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/plants2.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Raphidodphora Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$324</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants3.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera Adansoni</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$200</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants4.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$178</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants5.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera with big pot</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$500</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants6.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera Andansoni III</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$260</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants7.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$145</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants8.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Philodendron Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$129</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants1.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Philodendron Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$325</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/plants2.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Raphidodphora Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$324</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants3.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera Adansoni</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$200</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants4.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$178</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants5.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera with big pot</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$500</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants6.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera Andansoni III</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$260</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants7.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$145</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants8.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Philodendron Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$129</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants1.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Philodendron Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$325</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/plants2.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Raphidodphora Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$324</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants3.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera Adansoni</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$200</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants4.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$178</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants5.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera with big pot</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$500</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants6.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera Andansoni III</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$260</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants7.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$145</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="cards-img">
+                <div class="img-sell">
+                    <img src="/Images/Plants for Sell/Plants8.jpg" alt="img1">
+                </div>
+                <div class="details">
+                    <span>Philodendron Monstera</span><br>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star" style="opacity: 50%;"></i></a><br>
+                    <span>$129</span>
+                    <a class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<script src="/public/JS/script.js"></script>
+</body>
+</html>

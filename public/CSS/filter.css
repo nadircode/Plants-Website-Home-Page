@@ -1,0 +1,76 @@
+.filter{
+    background: #fff;
+    margin-top: 10px;
+    max-width: 200px;
+    padding: 5px 20px;
+    height: 450px;
+}
+#planters , #categ5 {
+    display: none;
+}
+.categories input , .categories label{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+input[type="checkbox"]:focus {
+    border : red;
+    background: #54a663;
+}
+.view-more {
+     border: none;
+     background: #fff;
+     cursor: pointer;
+     margin-left: 30px;
+}
+.price-range div{
+    display: flex;
+    margin-left: 0px;
+}
+.price-range .min , .price-range .max{
+    width: 50%;
+    height: 30px;
+    border: 1px solid #BFBDB9;
+    border-radius: 3px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+.price-range .min , .price-range .max:focus{
+    outline: none;
+}
+.stars a{
+    font-size: 20px;
+    color: gold;
+    cursor: pointer;
+    opacity: 50%;
+}
+.stars:hover a{
+    opacity: 100%;
+}
+.stars  a:hover{
+    opacity: 100%;
+}
+.stars  a:hover ~ a{
+    opacity: 50%;
+}
+.filter-button{
+    padding: 30px;
+    text-align: center;
+}
+.filter-button button{
+    background-color: #57a967;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Queries for Filter Bar */ 
+
+@media  (max-width : 480px) {
+    .filter{
+        display: none;
+    }
+}
+

@@ -1,0 +1,111 @@
+header{
+  background: #fff;
+  width: 100%;
+}
+.navbar{
+    margin: 0;
+    display: flex;
+    width: 100%;
+  }
+  .logo{
+    display: flex;
+    margin: 10px 20px;
+  }
+  #logo-img{
+    width: 45px;
+    height: 45px;
+    margin: 10px 0px;
+  }
+  span h2{
+    color: rgb(39, 39, 39);
+    font-size: 25px;
+  }
+  .nav-item{
+    margin-left: 100px;
+    margin-top: 15px;
+    width: 100%;
+  }
+  .nav-item ul{
+    list-style: none;
+    display: flex;
+  }
+  .nav-item ul a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin-left: 70px;
+    opacity: 0.4;
+    justify-content: space-between ;
+    padding: 10px;
+  }
+  .profile{
+    margin-left: 400px;
+    margin-top: 10px;
+  }
+  .profile ul{
+    display: flex;
+    text-align: right;
+    list-style: none;
+  }
+  .profile ul a li img{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+  }  
+  hr{
+    border-color: #000;
+    opacity: 0.1;
+    margin-top: -10px;
+  }
+  .nav-item ul a:hover{
+    opacity: 1;
+  }
+  .active-btn-nav{
+    border-bottom:1px solid #54a663 ;
+    opacity: 1;
+  }
+  .btn-menu{
+    margin-top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+
+  /* Media Queries for NavBar */
+
+  @media  (max-width:480px) {
+    body{
+      margin: 0;
+      overflow-x: hidden;
+    }
+    header{
+      width: 100%;
+      height: 40px;
+    }
+    .logo{
+      display: flex;
+      margin: 0px 10px;
+    }
+    #logo-img{
+      width: 25px;
+      height: 25px;
+      margin: 10px 0px;
+    }
+    span h2{
+      font-size: 16px;
+    }
+    .navbar .btn-menu{
+      margin-top: 15px;
+      display: block;
+      margin-left: 75%;
+      font-size: 15px;
+    }
+    .nav-item{
+      margin-left: 0px;
+      display: none;
+    }
+    .profile{
+      display: none;
+    }
+  }
+  
